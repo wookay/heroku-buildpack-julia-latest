@@ -26,11 +26,9 @@ BIN_PATH="$BUILD_DIR/bin"
 TMP_PATH="$BUILD_DIR/tmp"
 mkdir -p $CACHE_DIR $BIN_PATH $TMP_PATH
 
-JULIA_VERSION="julia-0.5.0"
+JULIA_VERSION="julia-latest"
 
-S3_BUCKET="julialang"
-JULIA_URL="http://${S3_BUCKET}.s3.amazonaws.com/bin/linux/x64/0.5/${JULIA_VERSION}-linux-x86_64.tar.gz"
-           # https://julialang.s3.amazonaws.com/bin/linux/x64/0.5/julia-0.5.0-linux-x86_64.tar.gz
+JULIA_URL="https://julialangnightlies-s3.julialang.org/bin/linux/x64/${JULIA_VERSION}-linux64.tar.gz
 JULIA_BINARIES="$CACHE_DIR/${JULIA_VERSION}.tar.gz"
 JULIA_PATH="$TMP_PATH/julia"
 
