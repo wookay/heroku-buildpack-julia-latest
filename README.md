@@ -1,17 +1,17 @@
-# Julia 0.7.0-alpha buildpack for Heroku
+# Julia Nightly buildpack for Heroku
 
 This is a Heroku buildpack for adding a [Julia binary][1] to your environment.
 
 ## Versions
 
 * Buildpack: `0.2`
-* Julia: `0.7.0-alpha`
+* Julia: `latest`
 
 ## Usage
 
 Add this line to the .buildpacks file in your project:
 
-`https://github.com/wookay/heroku-buildpack-julia-07.git`
+`https://github.com/wookay/heroku-buildpack-julia-latest.git`
 
 or use the command `heroku buildpacks:set`
 
