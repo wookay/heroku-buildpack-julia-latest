@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-echo "heroku-buildpack-julia-07"
+echo "heroku-buildpack-julia-latest"
 exit 0
