@@ -1,11 +1,11 @@
-# Julia 0.7.0-DEV buildpack for Heroku
+# Julia 0.7.0-alpha buildpack for Heroku
 
 This is a Heroku buildpack for adding a [Julia binary][1] to your environment.
 
 ## Versions
 
 * Buildpack: `0.2`
-* Julia: `0.7.0-DEV`
+* Julia: `0.7.0-alpha`
 
 ## Usage
 
@@ -20,8 +20,8 @@ Julia code you want to run after installation.
 E.g. to add Bukdu support:
 ```julia
 using Pkg
-Pkg.clone("https://github.com/wookay/Bukdu.jl.git")
-Pkg.checkout("Bukdu", "sevenstars")
+Pkg.REPLMode.pkgstr("add HTTP#master")
+Pkg.REPLMode.pkgstr("add https://github.com/wookay/Bukdu.jl.git#sevenstars")
 using Bukdu
 ```
 
